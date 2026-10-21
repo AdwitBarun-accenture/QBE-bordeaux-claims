@@ -1,0 +1,12 @@
+{
+  "codes": {
+    "PROP":  {"label": "Property",            "aliases": ["property", "prop", "commercial property", "fire", "property damage", "pd"]},
+    "LIAB":  {"label": "Liability",           "aliases": ["liability", "liab", "general liability", "public liability", "pl", "casualty"]},
+    "MAR":   {"label": "Marine",              "aliases": ["marine", "mar", "cargo", "marine cargo", "hull"]},
+    "ENGY":  {"label": "Energy",              "aliases": ["energy", "engy", "power", "onshore energy", "offshore energy"]},
+    "CYBER": {"label": "Cyber",               "aliases": ["cyber", "cyber liability", "data breach"]},
+    "A&H":   {"label": "Accident & Health",   "aliases": ["a&h", "accident and health", "accident & health", "pa"]}
+  },
+  "requires_eml": ["PROP", "ENGY"],
+  "claim_markers": ["claim", "clm", "loss"]
+}

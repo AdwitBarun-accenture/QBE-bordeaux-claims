@@ -1,0 +1,5 @@
+{
+  "allowed": ["Open", "Closed", "Reopened", "Declined"],
+  "aliases": {"open": "Open", "settled": "Closed", "closed": "Closed", "finalised": "Closed", "re-opened": "Reopened",
+              "reopened": "Reopened", "declined": "Declined", "denied": "Declined", "part paid": "Open", "partially paid": "Open"}
+}

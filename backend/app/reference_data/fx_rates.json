@@ -1,0 +1,6 @@
+{
+  "_note": "Units of GBP per 1 unit of currency. Mockup values; wire a real rate feed via enrichment/fx.py RateProvider.",
+  "base": "GBP",
+  "as_of": "2026-04-30",
+  "rates": {"GBP": 1.0, "USD": 0.79, "EUR": 0.86, "JPY": 0.0052, "CAD": 0.58, "AUD": 0.52, "CHF": 0.89}
+}

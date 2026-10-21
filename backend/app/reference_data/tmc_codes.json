@@ -1,0 +1,5 @@
+{
+  "_note": "Placeholder codes from the mockup. Replace with the real taxonomy.",
+  "map": {"PROP": "TMC-110", "MAR": "TMC-220", "LIAB": "TMC-330", "ENGY": "TMC-440", "CYBER": "TMC-550", "A&H": "TMC-660"},
+  "unknown": "TMC-999"
+}

@@ -1,0 +1,9 @@
+{
+  "iso": ["GBP","USD","EUR","JPY","CAD","AUD","CHF","NZD","SGD","HKD","ZAR","SEK","NOK","DKK","INR","CNY","AED","SAR","BRL","MXN"],
+  "aliases": {
+    "sterling": "GBP", "pound": "GBP", "pounds": "GBP", "pound sterling": "GBP", "£": "GBP", "stg": "GBP", "gbp": "GBP",
+    "dollar": "USD", "dollars": "USD", "us dollar": "USD", "usd": "USD", "$": "USD", "us$": "USD",
+    "euro": "EUR", "euros": "EUR", "€": "EUR", "eur": "EUR",
+    "yen": "JPY", "cad$": "CAD", "a$": "AUD"
+  }
+}

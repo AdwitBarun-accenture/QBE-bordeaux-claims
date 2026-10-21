@@ -1,0 +1,9 @@
+{
+  "iso2": ["GB","US","DE","FR","IE","NL","ES","IT","CH","JP","CA","AU","SG","HK","AE","IN","ZA","BR","MX","CN"],
+  "aliases": {
+    "uk": "GB", "united kingdom": "GB", "great britain": "GB", "england": "GB", "scotland": "GB", "wales": "GB", "gbr": "GB",
+    "usa": "US", "united states": "US", "us": "US",
+    "germany": "DE", "deu": "DE", "france": "FR", "ireland": "IE", "netherlands": "NL", "spain": "ES", "italy": "IT",
+    "switzerland": "CH", "japan": "JP", "canada": "CA", "australia": "AU", "singapore": "SG", "india": "IN"
+  }
+}

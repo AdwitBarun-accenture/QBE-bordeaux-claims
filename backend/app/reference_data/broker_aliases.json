@@ -1,0 +1,8 @@
+{
+  "MARS": {"name": "Marsh Ltd",            "aliases": ["marsh", "marsh ltd", "marsh limited", "marsh & mclennan"]},
+  "WTWS": {"name": "Willis Towers Watson", "aliases": ["willis", "willis towers watson", "wtw", "willis tw"]},
+  "LOCK": {"name": "Lockton",              "aliases": ["lockton", "lockton companies"]},
+  "GALG": {"name": "Gallagher",            "aliases": ["gallagher", "ajg", "arthur j gallagher"]},
+  "AONL": {"name": "Aon UK Ltd",           "aliases": ["aon", "aon uk", "aon uk ltd"]},
+  "JLTG": {"name": "JLT Group",            "aliases": ["jlt", "jlt group"]}
+}

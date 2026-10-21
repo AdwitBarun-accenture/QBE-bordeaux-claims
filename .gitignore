@@ -1,0 +1,88 @@
+# ---------------- Python ----------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# ---------------- Environment / secrets ----------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------------- Node / React ----------------
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+
+# ---------------- IDE ----------------
+.vscode/
+.idea/
+
+# ---------------- OS ----------------
+.DS_Store
+Thumbs.db
+
+# ---------------- Databases ----------------
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------------- Logs ----------------
+*.log
+logs/
+
+# ---------------- Runtime / uploads ----------------
+uploads/
+data/
+storage/
+tmp/
+temp/
+
+# ---------------- Bordereaux / client files ----------------
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+*.zip
+
+# ---------------- Python build ----------------
+build/
+dist/
+*.egg-info/
+
+# Client / test datasets
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+*.zip
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3

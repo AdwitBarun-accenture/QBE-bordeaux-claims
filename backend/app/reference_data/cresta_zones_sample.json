@@ -1,0 +1,6 @@
+{
+  "_note": "ILLUSTRATIVE ONLY. Real CRESTA zones require licensed data and a geocoder. Keyed by UK postcode area.",
+  "GB": {"B": "GBR_B", "M": "GBR_M", "E": "GBR_E", "EC": "GBR_EC", "W": "GBR_W", "LS": "GBR_LS", "TS": "GBR_TS",
+          "IP": "GBR_IP", "PH": "GBR_PH", "G": "GBR_G", "L": "GBR_L", "N": "GBR_N", "SW": "GBR_SW", "SE": "GBR_SE"},
+  "default": "UNASSIGNED"
+}

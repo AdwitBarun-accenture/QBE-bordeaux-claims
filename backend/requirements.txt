@@ -1,0 +1,37 @@
+# --- web / core ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.3
+python-multipart>=0.0.9
+sqlalchemy>=2.0
+pyjwt>=2.8
+bcrypt>=4.1
+cryptography>=42
+# --- parsing / data ---
+openpyxl>=3.1
+pandas>=2.2
+xlrd>=2.0            # legacy .xls
+charset-normalizer>=3.3
+msoffcrypto-tool>=5.4
+rapidfuzz>=3.6
+python-dateutil>=2.9
+# --- AI ---
+anthropic>=0.69      # includes AnthropicFoundry (Claude on Azure)
+openai>=1.40         # only if LLM_PROVIDER=azure_openai
+# --- Azure ---
+azure-identity>=1.17
+azure-storage-blob>=12.20
+azure-keyvault-secrets>=4.8
+azure-servicebus>=7.12
+psycopg[binary]>=3.1  # Azure Database for PostgreSQL
+# --- connectors / scheduling ---
+httpx>=0.27
+msal>=1.28
+paramiko>=3.4
+apscheduler>=3.10
+# --- optional warehouses (uncomment the one you use) ---
+# snowflake-sqlalchemy>=1.6
+# pyodbc>=5.1         # Azure SQL / Fabric
+# --- tests ---
+pytest>=8.0

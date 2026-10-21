@@ -1,0 +1,33 @@
+# Local full stack that mirrors Azure: Postgres (= Azure Database for PostgreSQL),
+# Azurite (= Azure Blob Storage), API, worker-less in-process queue, UI.
+#   docker compose up --build      ->  http://localhost:8080   (analyst@lloyds.com / demo)
+services:
+  postgres:
+    image: postgres:16
+    environment: { POSTGRES_USER: bdx, POSTGRES_PASSWORD: bdx, POSTGRES_DB: bdx }
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data", "./infra/init-dwh.sql:/docker-entrypoint-initdb.d/init.sql"]
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    command: azurite-blob --blobHost 0.0.0.0 --skipApiVersionCheck
+    ports: ["10000:10000"]
+  backend:
+    build: ./backend
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://bdx:bdx@postgres:5432/bdx
+      DWH_DATABASE_URL: postgresql+psycopg://bdx:bdx@postgres:5432/bdx_dwh
+      STORAGE_BACKEND: azure_blob
+      AZURE_STORAGE_CONNECTION_STRING: DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://azurite:10000/devstoreaccount1;
+      CORS_ORIGINS: http://localhost:8080
+    depends_on: [postgres, azurite]
+    ports: ["8000:8000"]
+  ui:
+    build: ./frontend
+    environment: { API_UPSTREAM: "http://backend:8000" }
+    depends_on: [backend]
+    ports: ["8080:80"]
+volumes:
+  pgdata:
